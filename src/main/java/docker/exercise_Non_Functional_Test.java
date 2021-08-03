@@ -15,6 +15,15 @@ public class exercise_Non_Functional_Test {
             WebElement dropdown = driver.findElement(By.id("language"));
             dropdown.findElement(By.xpath("//option[. = 'English (UK)']")).click();
 
+          /*  JSONObject responseJSON = new AXE.Builder(driver, scriptUrl).analyze();
+            JSONArray violations = responseJSON.getJSONArray("violations");
+            if (violations.length() == 0) {
+                assertTrue("No violations found", true);
+            } else {
+                AXE.writeResults(testName.getMethodName(), responseJSON);
+                assertTrue(AXE.report(violations), false);
+            }*/
+
         }
         }
 }
